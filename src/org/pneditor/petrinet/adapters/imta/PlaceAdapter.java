@@ -2,7 +2,7 @@ package org.pneditor.petrinet.adapters.imta;
 
 import org.pneditor.petrinet.AbstractPlace;
 
-import model.Place;
+import imt.model.petrinet.Place;
 
 
 
@@ -38,6 +38,10 @@ public class PlaceAdapter extends AbstractPlace {
 	@Override
 	public void setTokens(int tokens) {
 		adaptee.setNumJetons(tokens);
+	}
+	
+	public void setAdaptee(Place p) {
+		this.adaptee = p;
 	}
 
 }
